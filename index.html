@@ -345,8 +345,11 @@
         <label>Luogo di nascita*<input required name="luogo"></label>
         <label>Codice fiscale*<input required name="cf" maxlength="16" style="text-transform:uppercase"></label>
         <label>Telefono<input name="tel"></label>
-        <label style="grid-column:1/-1">Indirizzo di residenza*<input required name="residenza"></label>
-        <label style="grid-column:1/-1">Email*<input required type="email" name="email"></label>
+        <label style="grid-column:1/-1">Indirizzo (via e numero civico)*<input required name="indirizzo"></label>
+        <label>Città*<input required name="citta"></label>
+        <label>CAP*<input required name="cap" maxlength="5" inputmode="numeric"></label>
+        <label>Provincia*<input required name="provincia" maxlength="2" style="text-transform:uppercase"></label>
+        <label>Email*<input required type="email" name="email"></label>
       </div>
       <div class="checks">
         <label><input type="checkbox" required> Dichiaro di aver letto e di accettare integralmente lo Statuto dell'associazione e mi impegno al versamento della quota associativa annuale.*</label>
@@ -418,7 +421,10 @@
 Il/La sottoscritto/a: ${f.nome.value} ${f.cognome.value}
 Nato/a a: ${f.luogo.value} il ${f.nascita.value}
 Codice fiscale: ${f.cf.value.toUpperCase()}
-Residente in: ${f.residenza.value}
+Indirizzo: ${f.indirizzo.value}
+Città: ${f.citta.value}
+CAP: ${f.cap.value}
+Provincia: ${f.provincia.value.toUpperCase()}
 Email: ${f.email.value}
 Telefono: ${f.tel.value || '-'}
 
