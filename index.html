@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La Culla ETS — Una casa per crescere</title>
 <meta name="description" content="La Culla ETS sostiene la missione della Comunità Piccoli Amici di Gesù e Maria in Nigeria: costruiamo una scuola e una casa di accoglienza per bambini in difficoltà e ragazze madri.">
+<link rel="canonical" href="https://www.laculla.org/">
+<link rel="icon" href="img/logo.jpeg">
+<link rel="apple-touch-icon" href="img/logo.jpeg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="La Culla ETS">
+<meta property="og:url" content="https://www.laculla.org/">
+<meta property="og:title" content="La Culla ETS — Una casa per crescere">
+<meta property="og:description" content="Costruiamo una scuola e una casa di accoglienza in Nigeria per la Comunità di Suor Florence. Obiettivo 39.000 € entro marzo 2027.">
+<meta property="og:image" content="https://www.laculla.org/img/logo.jpeg">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   /* ---- Font self-ospitati: nessuna chiamata a Google, nessun dato dei visitatori verso terzi ---- */
   @font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:200 800;font-stretch:100%;font-display:swap;
@@ -121,6 +132,29 @@
   /* dentro la card crema il testo deve restare scuro, non bianco */
   .dona-card .fine{color:var(--ink-soft)}
 
+  /* COME FARE IL BONIFICO */
+  .dona-how{margin-top:34px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);
+            border-radius:14px;padding:28px}
+  .dona-how h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:22px}
+  .dona-how .intro{margin-top:8px;max-width:640px;text-wrap:balance}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+  .step{background:rgba(255,255,255,.10);border-radius:12px;padding:20px}
+  .step .n{width:30px;height:30px;border-radius:50%;background:var(--gold-soft);color:var(--ink);
+           font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:15px;display:grid;place-items:center}
+  .step h4{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;margin-top:12px}
+  .step p{font-size:13.5px;line-height:1.65;margin-top:6px;color:rgba(255,255,255,.92)}
+  .causale{margin-top:18px;background:var(--cream);color:var(--ink);border-radius:10px;padding:14px 16px;
+           font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:15px;line-height:1.5;word-break:break-word}
+  .causale span{display:block;font-family:'Public Sans',sans-serif;font-weight:700;font-size:11px;
+                letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px}
+  .faq{margin-top:22px;display:grid;gap:10px}
+  .faq details{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:14px 18px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;list-style:none}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:'+\00a0';font-weight:800;color:var(--gold-soft)}
+  .faq details[open] summary::before{content:'\2013\00a0'}
+  .faq p{font-size:13.5px;line-height:1.65;margin-top:8px;color:rgba(255,255,255,.92)}
+
   /* 5x1000 */
   .cinque{background:var(--sand)}
   .cfbox{display:inline-flex;flex-direction:column;gap:2px;background:#fff;border:2px solid var(--terracotta);
@@ -184,6 +218,10 @@
     .stats{padding:28px 24px}
     .fgrid{grid-template-columns:1fr}
     footer{padding:32px 24px}
+  }
+  @media(max-width:820px){
+    .steps{grid-template-columns:1fr}
+    .dona-how{padding:22px}
   }
   @media(max-width:560px){
     .fasi,.tiers{grid-template-columns:1fr}
@@ -298,8 +336,8 @@
         <h3>Bonifico bancario</h3>
         <p class="lead" style="margin-top:10px">Intestato a <strong>La Culla ETS</strong></p>
         <p class="iban">IT95 U034 4003 2130 0000 0497 300</p>
-        <p class="fine">Causale: «Erogazione liberale — Costruiamo la missione».</p>
-        <p class="fine" style="margin-top:10px">La Culla è iscritta al RUNTS: le erogazioni liberali effettuate con strumenti di pagamento tracciabili sono fiscalmente agevolate ai sensi dell'art. 83 del D.Lgs. 117/2017, a scelta del donatore, come <strong>detrazione IRPEF del 30%</strong> (fino a 30.000 € l'anno) oppure come <strong>deduzione dal reddito nel limite del 10%</strong>. Conserva la contabile del bonifico e la ricevuta che ti rilasceremo.</p>
+        <p class="fine">Causale: <strong>Erogazione liberale - Costruiamo la missione - Nome Cognome - Codice fiscale</strong>.</p>
+        <p class="fine" style="margin-top:10px">La Culla è iscritta al RUNTS: le erogazioni liberali effettuate con strumenti di pagamento tracciabili — bonifico, carta, assegno — sono fiscalmente agevolate ai sensi dell'art. 83 del D.Lgs. 117/2017, a scelta del donatore, come <strong>detrazione IRPEF del 30%</strong> (fino a 30.000 € l'anno) oppure come <strong>deduzione dal reddito nel limite del 10%</strong>. I due benefici sono alternativi. Le donazioni in contanti non danno diritto ad alcuna agevolazione. Conserva la contabile del bonifico e la ricevuta che ti rilasceremo.</p>
         <p class="fine" style="margin-top:10px">Codice Fiscale: <strong>96660860584</strong></p>
       </div>
       <div>
@@ -309,7 +347,63 @@
           <div class="tier"><b>500 €</b><span>una finestra completa</span></div>
           <div class="tier"><b>1.500 €</b><span>un settore di tetto</span></div>
         </div>
-        <p class="fine" style="margin-top:14px">Per ogni donazione l'associazione rilascia regolare ricevuta valida ai fini fiscali. Nessuna spesa di gestione: il 100% delle donazioni è destinato al progetto.</p>
+        <p class="fine" style="margin-top:14px">Per ogni donazione l'associazione rilascia regolare ricevuta valida ai fini fiscali. Le spese di funzionamento sono coperte dalle quote associative: <strong>il 100% delle donazioni è destinato al progetto</strong>.</p>
+      </div>
+    </div>
+
+    <div class="dona-how">
+      <h3>Come fare il bonifico, passo per passo</h3>
+      <p class="fine intro">Non serve un bonifico particolare: va bene un normale bonifico dal tuo conto, anche dall'app della banca. Contano solo tre cose.</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <h4>Il beneficiario</h4>
+          <p>Intestatario <strong>La Culla ETS</strong>, IBAN <strong>IT95 U034 4003 2130 0000 0497 300</strong>. È un normale conto corrente italiano: nessuna commissione aggiuntiva rispetto a un bonifico ordinario.</p>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <h4>La causale</h4>
+          <p>Deve contenere le parole <strong>«erogazione liberale»</strong>: sono quelle che distinguono la donazione da una quota associativa o dal pagamento di un servizio. Aggiungi nome, cognome e codice fiscale per farti intestare la ricevuta senza errori.</p>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <h4>La ricevuta</h4>
+          <p>Te la inviamo noi. Se entro qualche giorno non l'hai ricevuta, scrivi a <a href="mailto:la.culla.roma@gmail.com" style="color:#fff;text-decoration:underline">la.culla.roma@gmail.com</a> indicando data e importo del bonifico. Conservala con la contabile: servono entrambe per la dichiarazione dei redditi.</p>
+        </div>
+      </div>
+
+      <div class="causale">
+        <span>Causale da copiare</span>
+        Erogazione liberale - Costruiamo la missione - Nome Cognome - Codice fiscale
+      </div>
+      <p class="fine" style="margin-top:8px">Sostituisci «Nome Cognome» e «Codice fiscale» con i tuoi dati. Alcune banche non accettano le virgolette e le lettere accentate nella causale: scrivila senza.</p>
+
+      <div class="faq">
+        <details>
+          <summary>Devo per forza indicare il codice fiscale nella causale?</summary>
+          <p>No, non è obbligatorio: il diritto all'agevolazione dipende dal fatto che il pagamento sia tracciabile e dalla ricevuta che rilasciamo. Ma con nome e codice fiscale possiamo intestare correttamente la ricevuta senza doverti ricontattare.</p>
+        </details>
+        <details>
+          <summary>Posso donare come azienda o come ente?</summary>
+          <p>Sì. Nella causale indica la ragione sociale e la partita IVA. Imprese ed enti deducono l'erogazione dal reddito nel limite del 10% del reddito complessivo dichiarato (art. 83, comma 2, D.Lgs. 117/2017).</p>
+        </details>
+        <details>
+          <summary>Ho versato la quota associativa: posso detrarla?</summary>
+          <p>No. La quota associativa annuale di 50 € non è una donazione e non è fiscalmente detraibile. Lo è invece qualsiasi versamento ulteriore fatto a titolo di erogazione liberale, con causale separata dalla quota.</p>
+        </details>
+        <details>
+          <summary>Ho donato in contanti a un banchetto: che succede?</summary>
+          <p>Rilasciamo comunque la ricevuta e la donazione viene registrata nel rendiconto della raccolta fondi, ma la legge non consente di detrarla né di dedurla: l'agevolazione spetta solo per i versamenti tracciabili.</p>
+        </details>
+        <details>
+          <summary>Posso donare una somma ricorrente ogni mese?</summary>
+          <p>Sì: imposta un bonifico ricorrente dalla tua banca con la stessa causale. A fine anno riceverai un'unica ricevuta riepilogativa con il totale versato nell'anno solare.</p>
+        </details>
+        <details>
+          <summary>Posso destinare la donazione a una fase precisa del cantiere?</summary>
+          <p>Sì: aggiungi in causale la fase che vuoi sostenere (per esempio «fondamenta» o «copertura»). Ne teniamo conto nella rendicontazione, nei limiti dell'avanzamento dei lavori.</p>
+        </details>
       </div>
     </div>
   </div>
@@ -321,7 +415,7 @@
     <h2>Destina il tuo 5×1000 a La Culla ETS</h2>
     <p class="lead" style="margin-top:12px;max-width:760px">Non ti costa nulla e non è una donazione: è una quota delle imposte che paghi comunque. Nella dichiarazione dei redditi (modello 730, Redditi PF o CU) firma nel riquadro «Sostegno degli enti del Terzo settore iscritti nel RUNTS» e scrivi il nostro codice fiscale.</p>
     <div class="cfbox"><span>Codice Fiscale</span><b>96660860584</b></div>
-    <p class="fine" style="max-width:760px">La Culla ETS è iscritta al RUNTS e accreditata al 5×1000. La scelta è gratuita e si aggiunge alle imposte già dovute: se non indichi alcun beneficiario, quella quota resta comunque allo Stato. Il 5×1000 non sostituisce le donazioni: puoi fare entrambe le cose.</p>
+    <p class="fine" style="max-width:760px">La Culla ETS è iscritta al RUNTS ed è accreditata al 5×1000 <strong>a partire dalle dichiarazioni dei redditi che si presentano nel 2027</strong> (relative all'anno d'imposta 2026). La scelta è gratuita e si aggiunge alle imposte già dovute: se non indichi alcun beneficiario, quella quota resta comunque allo Stato. Il 5×1000 non sostituisce le donazioni: puoi fare entrambe le cose.</p>
   </div>
 </section>
 
@@ -394,7 +488,7 @@
       <ul>
         <li><strong>Compensi agli organi sociali:</strong> tutte le cariche sono gratuite; nessun compenso, indennità o gettone è corrisposto ad amministratori o soci.</li>
         <li><strong>Contributi pubblici:</strong> nessun contributo pubblico ricevuto ad oggi (L. 124/2017, art. 1 c. 125 ss.).</li>
-        <li><strong>Rendiconto annuale:</strong> il rendiconto dell'esercizio e quello delle raccolte fondi saranno pubblicati in questa sezione dopo l'approvazione dell'Assemblea (entro il 30 aprile di ogni anno).</li>
+        <li><strong>Rendiconto annuale:</strong> il rendiconto per cassa dell'esercizio e il rendiconto specifico delle raccolte fondi (art. 48, comma 3, D.Lgs. 117/2017) saranno pubblicati in questa sezione dopo l'approvazione dell'Assemblea, che avviene entro il 30 aprile di ogni anno; il deposito al RUNTS è effettuato entro il 30 giugno.</li>
       </ul>
     </div>
   </div>
