@@ -481,6 +481,7 @@
       <div class="checks">
         <label><input type="checkbox" required> Dichiaro di aver letto e di accettare integralmente lo Statuto dell'associazione e mi impegno al versamento della quota associativa annuale.*</label>
         <label><input type="checkbox" required> Dichiaro di aver preso visione dell'<a href="privacy.html" target="_blank">informativa privacy</a> ai sensi dell'art. 13 Reg. UE 2016/679.*</label>
+        <label><input type="checkbox" name="newsletter"> Acconsento a ricevere via email aggiornamenti sulle attività e sulle raccolte fondi dell'associazione (facoltativo, revocabile in ogni momento dal link in fondo a ogni email).</label>
       </div>
       <button type="submit">Invia domanda di adesione</button>
       <p class="fine" style="margin-top:12px">Premendo il pulsante si aprirà il tuo programma di posta con la domanda già compilata, da inviare a la.culla.roma@gmail.com. Riceverai conferma dell'ammissione con le istruzioni per il versamento della quota.</p>
@@ -554,6 +555,7 @@ CAP: ${f.cap.value}
 Provincia: ${f.provincia.value.toUpperCase()}
 Email: ${f.email.value}
 Telefono: ${f.tel.value || '-'}
+Comunicazioni informative (newsletter): ${f.newsletter.checked ? 'SÌ' : 'NO'}
 
 CHIEDE di essere ammesso/a quale socio ordinario dell'Associazione «La Culla ETS» (C.F. 96660860584).
 
